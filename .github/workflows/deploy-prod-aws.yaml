@@ -3,13 +3,13 @@ name: Terraform Deployment
 on:
   push:
     branches:
-      - development
+      - main
   workflow_dispatch:
     branches:
-      - development
+      - main
 
 env:
-  AWS_REGION: MY_AWS_REGION
+  AWS_REGION: us-east-1
 
 permissions:
   contents: read
