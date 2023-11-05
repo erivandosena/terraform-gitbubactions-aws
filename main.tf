@@ -4,7 +4,8 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "terraform-state-bucket-iac"
+    bucket = "terraform-state-bucket-erivandosena"
+    key    = "terraform-erivando-githubactions.tfstate"
     region = "us-east-1"
     encrypt = false
   }
